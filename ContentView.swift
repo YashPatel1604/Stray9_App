@@ -11,43 +11,43 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             ZStack{
-                
-                Color(red: 204/256, green: 180/256, blue: 146/256).edgesIgnoringSafeArea(.all)
+                Color(red:31/255, green:24/255, blue:18/255).edgesIgnoringSafeArea(.all)
                 Rectangle()
-                    .fill(Color(red: 187/256, green: 160/256, blue: 122/256))
+                    .fill(Color(red: 0/256, green: 0/256, blue: 0/256))
                     .frame(width: 400, height: 100)
-                    .position(x:190,y:730)
+                    .position(x:190,y:765)
                 HStack{
                     NavigationLink(destination: AboutView()){
-                        Image("Adopt")
+                        Image("About")
                     }
-                    .padding().font(.system(size: 30))
-                    NavigationLink(destination: AnnouncementView()){
-                        Image("Announcement")
+                    .padding(7)
+                    .font(.system(size: 30))
+                    NavigationLink(destination: UserView()){
+                        Image("User")
                     }
-                    .padding()
+                    .padding(7)
                     .font(.system(size: 30))
                     NavigationLink(destination: HelpView()){
-                        Image("Camera")
+                        Image("Adopt")
                     }
-                    .padding()
+                    .padding(7)
                     .font(.system(size: 30))
                     NavigationLink(destination: DonateView()){
-                        Image("Pay")
+                        Image("Donate")
                     }
-                    .padding()
+                    .padding(7)
                     .font(.system(size: 30))
                     NavigationLink(destination: AdoptView()){
                         Image("Adopt")
                     }
-                    .padding()
                     .font(.system(size: 30))
                 }
-                .padding()
-                .aspectRatio(contentMode:.fit).position(x:190,y:720)
+                .padding([.horizontal],10)
+                .aspectRatio(contentMode:.fit).position(x:190,y:760)
                 
-            }.navigationTitle(Text("Announcements")).navigationBarTitleDisplayMode(.inline)
+            }
         }
+                         
         
         
     }

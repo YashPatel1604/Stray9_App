@@ -23,7 +23,7 @@ struct AdoptView: View {
                     }
                     
                 }.padding().position(x:195,y:360)
-        }.background(Color(red: 204/256, green: 180/256, blue: 146/256))
+        }.background(Color(red:31/255, green:24/255, blue:18/255))
     }
     
     struct AdoptView_Previews: PreviewProvider {

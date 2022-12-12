@@ -11,7 +11,6 @@ import SwiftUI
 struct Stray9_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            OpeningScreenView()   }
     }
 }
